@@ -22,6 +22,9 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
+	always@(*) begin 
+		output = (1 << a) -1;
+	end
 	assign result = 0;
    
 endmodule
